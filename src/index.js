@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import SignIn from './components/SignIn.js'
 import * as serviceWorker from './serviceWorker';
+
+class App extends React.Component {
+  render() {
+    return (
+      <SignIn/>
+    );
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
